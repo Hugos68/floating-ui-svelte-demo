@@ -16,7 +16,7 @@
 
   // State
   let open = $state(false);
-  let elemArrow: HTMLElement | null = $state(null);
+  let arrowEl: HTMLElement | null = $state(null);
 
   // Use Floating
   const floating = useFloating({
@@ -31,7 +31,7 @@
         offset(10),
         shift({ padding: 16 }),
         flip(),
-        elemArrow && arrow({ element: elemArrow }),
+        arrowEl && arrow({ element: arrowEl }),
       ];
     },
   });
@@ -70,7 +70,7 @@
           without disrupting the flow, like this one!
         </p>
         <FloatingArrow
-          bind:ref={elemArrow}
+          bind:ref={arrowEl}
           context={floating.context}
           class="fill-slate-400"
         />
