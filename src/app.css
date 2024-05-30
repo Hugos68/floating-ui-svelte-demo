@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-slate-900 p-10 text-white;
+}
+
+h1,
+h2 {
+	@apply font-bold;
+}
+h1 {
+	@apply text-5xl;
+}
+h2 {
+	@apply text-3xl;
+}
+
+.btn {
+	@apply rounded bg-slate-700 px-4 py-2 hover:bg-slate-600;
+}
+
+.popover {
+	/* bg-slate-400: #94a3b8 */
+	@apply w-auto max-w-md rounded bg-slate-400 p-4 text-black;
+}
+
+/* Floating UI Svelte */
+
+.floating {
+	width: max-content;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
