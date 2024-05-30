@@ -64,7 +64,7 @@
 					A <strong>floating element</strong> is one that floats on top of the UI without disrupting
 					the flow, like this one!
 				</p>
-				<FloatingArrow bind:ref={arrowEl} context={floating.context} class="fill-slate-400" />
+				<FloatingArrow bind:ref={arrowEl} context={floating.context} fill="#94a3b8" />
 			</div>
 		{/if}
 	</section>
